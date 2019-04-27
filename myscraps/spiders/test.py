@@ -10,7 +10,7 @@ class QuotesSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'https://www.tripadvisor.com/Hotel_Review-g60763-d7787303-Reviews-The_New_York_EDITION-New_York_City_New_York.html',
+            'https://www.tripadvisor.com/Hotel_Review-g60763-d1646128-Reviews-InterContinental_New_York_Times_Square-New_York_City_New_York.html',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
